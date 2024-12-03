@@ -2,39 +2,16 @@
 
 import React from "react";
 import styles from "@/styles/Team.module.scss";
+import { teamData } from "@/data/teamData";
 
 const Team = () => {
-  const data = [
-    {
-      name: "John Smith",
-      role: "CEO",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      profile: "/images/person-1.jpg",
-    },
-    {
-      name: "Ann Brown",
-      role: "Designer",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      profile: "/images/person-2.jpg",
-    },
-    {
-      name: "Mary Doe",
-      role: "Programmer",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      profile: "/images/person-3.jpg",
-    },
-  ];
-
   return (
     <div className={styles.page} id="team">
       <div className={styles.pageTitle}>Our Team</div>
 
       <div className={styles.card}>
-        {data.length > 0 ? (
-          data.map((item, index) => (
+        {teamData.length > 0 ? (
+          teamData.map((item, index) => (
             <div key={index} className={styles.cardItem}>
               <div className={styles.piece}></div>
               <div className={styles.piece}></div>

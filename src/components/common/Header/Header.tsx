@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react'
+import React from 'react';
 import { BiMenu } from "react-icons/bi";
 import styles from './Header.module.scss';
 import { useSidebar } from "@/context/SideBarContext";

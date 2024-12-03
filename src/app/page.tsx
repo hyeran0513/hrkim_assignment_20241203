@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import About from '@/components/About'
-import Banner from '@/components/Banner'
-import Contact from '@/components/Contact'
-import Team from '@/components/Team'
-import React from 'react'
+import About from '@/components/About';
+import Banner from '@/components/Banner';
+import Contact from '@/components/Contact';
+import Team from '@/components/Team';
+import React from 'react';
 
 const page = () => {
   return (
-    <div>
+    <>
       <Banner />
 
       <About />
@@ -16,7 +16,7 @@ const page = () => {
       <Team />
 
       <Contact />
-    </div>
+    </>
   )
 }
 

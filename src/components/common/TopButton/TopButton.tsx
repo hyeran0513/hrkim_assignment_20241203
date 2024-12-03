@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import React from 'react'
-import styles from './TopButton.module.scss'
+import React from 'react';
+import styles from './TopButton.module.scss';
 import { FaArrowUp } from "react-icons/fa";
 
 const TopButton = () => {

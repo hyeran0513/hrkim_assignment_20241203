@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react'
-import styles from './Footer.module.scss'
+import React from 'react';
+import styles from './Footer.module.scss';
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 const Footer = () => {

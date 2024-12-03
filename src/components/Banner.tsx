@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react'
-import styles from '@/styles/Banner.module.scss'
+import React from 'react';
+import styles from '@/styles/Banner.module.scss';
 
 const Banner = () => {
   return (
