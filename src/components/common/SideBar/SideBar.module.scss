@@ -1,0 +1,139 @@
+.sideBar {
+  position: fixed;
+  top: 0;
+  right: -200%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  width: 400px;
+  height: 100vh;
+  background: #fff;
+  z-index: 101;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: right ease 0.6s;
+
+  &.open {
+    right: 0;
+  }
+
+  &.closed {
+    right: -200%;
+  }
+
+  &Header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+    .btnClose {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
+      border: 0;
+      border-radius: 6px;
+      background-color: transparent;
+      cursor: pointer;
+      font-size: 1.8rem;
+
+      &:hover {
+        .tooltip {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    .tooltip {
+      visibility: hidden;
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 8px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      margin-left: 8px;
+      font-size: 1rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent var(--primary-color) transparent transparent;
+      }
+    }
+  }
+
+  &Body {
+    flex: 1;
+    padding: 40px 0;
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      &Item {
+        button {
+          background: linear-gradient(
+            to right,
+            var(--primary-color) 50%,
+            #333 50%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          border: 0;
+          font-size: 1.8rem;
+          transition: background-position ease 0.5s;
+          background-size: 200% 100%;
+          background-position: 100% 0;
+          cursor: pointer;
+
+          &:hover {
+            background-position: 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &Footer {
+    padding: 30px 0;
+
+    .btnWrap {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        background: #737375;
+        color: #fff;
+        border-radius: 50%;
+        border: 0;
+        transition: background ease 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          background: var(--primary-color);
+        }
+      }
+    }
+  }
+}
