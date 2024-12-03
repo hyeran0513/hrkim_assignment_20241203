@@ -19,7 +19,6 @@
  ┃ ┃ ┣ 📜GeistMonoVF.woff
  ┃ ┃ ┗ 📜GeistVF.woff
  ┃ ┣ 📜layout.tsx
- ┃ ┣ 📜page.module.css
  ┃ ┗ 📜page.tsx
  ┣ 📂components
  ┃ ┣ 📂common
@@ -44,6 +43,9 @@
  ┃ ┗ 📜Team.tsx
  ┣ 📂context
  ┃ ┗ 📜SideBarContext.tsx
+ ┣ 📂data
+ ┃ ┣ 📜aboutData.tsx
+ ┃ ┗ 📜teamData.tsx
  ┗ 📂styles
  ┃ ┣ 📜About.module.scss
  ┃ ┣ 📜Banner.module.scss
@@ -51,5 +53,4 @@
  ┃ ┣ 📜global.scss
  ┃ ┣ 📜Team.module.scss
  ┃ ┗ 📜variables.scss
-
 ```
