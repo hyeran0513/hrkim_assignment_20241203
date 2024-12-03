@@ -43,3 +43,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
+    height: auto;
+
+    &Inner {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

@@ -10,7 +10,7 @@
     position: relative;
     margin-bottom: 80px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
 
     &::before {
       content: "";
@@ -74,19 +74,55 @@
         margin-bottom: 10px;
 
         .icon {
-          font-size: 2em;
+          font-size: 2rem;
         }
 
         .txt {
           line-height: 1.3;
-          font-size: 1.4em;
+          font-size: 1.4rem;
         }
       }
 
       .content {
         line-height: 1.3;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         color: #999;
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .page {
+    padding: 40px 20px;
+    height: auto;
+
+    .pageTitle {
+      margin-bottom: 50px;
+    }
+
+    .details {
+      grid-template-columns: 1fr;
+      gap: 30px;
+
+      &::before {
+        position: relative;    
+        width: 250px;
+        height: 160px;
+      }
+
+      .info {
+        max-width: 100%;
+
+        &:nth-child(odd),
+        &:nth-child(even) {
+          justify-self: flex-start;
+        }
+  
+        &:nth-child(4n + 1),
+        &:nth-child(4n + 2) {
+          margin-left: 0;
+        }
       }
     }
   }

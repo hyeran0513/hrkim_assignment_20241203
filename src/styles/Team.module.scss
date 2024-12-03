@@ -9,7 +9,7 @@
     position: relative;
     margin-bottom: 80px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2rem;
 
     &::before {
       content: "";
@@ -40,9 +40,8 @@
 
       .piece {
         position: absolute;
-        height: 33.333333%;
+        height: calc(100% / 3);
         width: calc(100% / 3);
-        display: block;
         z-index: 2;
 
         &:hover ~ .cardItemInner {
@@ -195,6 +194,34 @@
               background-color: var(--primary-darken-color);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .page {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 40px 20px;
+    height: auto;
+
+    .pageTitle {
+      margin-bottom: 50px;
+    }
+
+    .card {
+      flex-direction: column;
+      gap: 20px;
+
+      &Item {
+        &Inner {
+          padding-top: 20%;
         }
       }
     }

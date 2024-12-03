@@ -19,3 +19,10 @@
     background-color: var(--primary-darken-color);
   }
 }
+
+@media (max-width: 1400px) {
+  .btnTop {
+    right: 20px;
+    bottom: 40px;
+  }
+}
